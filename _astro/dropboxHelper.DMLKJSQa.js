@@ -1,0 +1,1 @@
+const e=r=>{try{const o=new URL(r);return(o.hostname==="www.dropbox.com"||o.hostname==="dropbox.com")&&(o.hostname="dl.dropboxusercontent.com",o.searchParams.delete("dl")),o.toString()}catch{return r}},c=(r,o)=>{const t=e(r);return fetch(t,o)};export{c as f};
